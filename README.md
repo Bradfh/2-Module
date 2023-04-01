@@ -10,4 +10,9 @@ Started this repo locally and learned to use git init  (as well as utilized GitH
 
 After committing this first README line I saw that I could go back and edit the README directly on GitHub.  Also awesome.
 
+Used <address> for first time.  https://www.w3schools.com/tags/tag_address.asp
+
+border box info https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
+
+
 
