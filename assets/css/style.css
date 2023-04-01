@@ -1,0 +1,29 @@
+:root {
+  --black: #000;
+  --blue: #14213D;
+  --orange: #FCA311;
+  --platinum: #e5e5e5;
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  }
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--blue);
+  }
+
+h1 {
+  font-size: 4rem;
+  color: var(--white);
+  padding: 1rem;  
+}
