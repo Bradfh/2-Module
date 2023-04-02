@@ -11,6 +11,10 @@
   padding: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%;
   }
@@ -92,13 +96,13 @@ a span:hover {
   background-image: url("../images/bluebackground.webp");
   background-size: cover;
   background-position: center;
-  min-height: 20rem;
+  min-height: 15rem;
   display: flex;
   flex-wrap: wrap;
   position: relative;
   display: flex;
-  flex-direction: row-reverse;
-  align-items: last baseline;  
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .background-img h2 {
@@ -108,7 +112,40 @@ a span:hover {
   border-radius: 10px;
   padding: 1rem 2rem;
   margin: 0 1rem 1rem 0;
+  line-height: .8;
 }
+
+main {
+  margin: 2.5rem;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items:  stretch;
+  justify-content: center;
+}
+
+section > h2 {
+  flex: 0 0 20%;
+  border-right: 5px solid var(--blue);
+  text-align: right;
+  font-size: 3rem;
+  padding: 10px 20px;
+}
+
+section > p {
+  flex: 0 0 80%;
+  padding: 0 2rem 0 3rem;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
 
 
 
