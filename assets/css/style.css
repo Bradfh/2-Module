@@ -129,7 +129,7 @@ section {
 }
 
 section > h2 {
-  flex: 0 0 20%;
+  flex-basis: 20%;
   border-right: 5px solid var(--blue);
   text-align: right;
   font-size: 3rem;
@@ -137,7 +137,7 @@ section > h2 {
 }
 
 .content {
-  flex: 0 0 80%;
+  flex-basis: 80%;
   padding: 0 2rem 0 3rem;
   font-size: 1.6rem;
   line-height: 1.5;
@@ -155,16 +155,33 @@ section > h2 {
   border: 5px solid red;
   background-color: var(--blue);
   display: flex;
-  flex-direction: row;
-  align-items: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
   padding: 0 0 3rem;
   min-height: 20rem;
   min-width: 20rem;
+  flex-basis: 47%;
+  margin: 1rem;
 }
 
 .card:first-child {
   min-height: 40rem;
   flex-basis: 100%;
+}
+
+.card:hover {
+  background-color: red;
+}
+
+.card h4 {
+  background-color: white;
+  flex-wrap: wrap;
+  width: 20%;
+  margin-left: 1rem;
+  font-size: 2rem;
+  padding: .5rem 0 .5rem 1rem;
+  border-radius: 10px;
+  
 }
 
 
