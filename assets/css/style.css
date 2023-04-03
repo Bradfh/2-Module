@@ -1,6 +1,6 @@
 :root {
   --black: #000;
-  --blue: #223867;
+  --blue: #16284e;
   --orange: #eb950b;
   --platinum: #e5e5e5;
   --white: #fff;
@@ -24,7 +24,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  background-image: linear-gradient(to right, var(--blue), rgb(9, 9, 234));
+  background-image: linear-gradient(to right, var(--blue), rgb(6, 6, 133));
   padding: 5rem 0 0 0;
   }
 
@@ -56,7 +56,7 @@ span:hover {
 }
 
 h1:hover:after {
-  content: url("../Images/placeholdface.jpg");
+  content: url("../Images/profile.jpg");
   position: absolute;
   display: block;
   max-block-size: 20rem 20rem;
@@ -120,14 +120,17 @@ a span:hover {
 }
 
 main {
-  margin: 2.5rem;
+  border: 2.5rem solid white;
 }
 
 section {
   display: flex;
   flex-flow: row wrap;
   align-items:  stretch;
-  margin: 1rem 0;
+  /* margin: 1rem 0; */
+  background-color: white;
+  border: 1rem solid white;
+
 }
 
 section > h2 {
@@ -195,6 +198,21 @@ section > h2 {
   align-items: center;
 } */
 
+.contact {
+  display: flex;
+  flex-basis: 80%;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+address a {
+  padding: 1rem;
+  margin: 1rem;
+  font-style: normal;
+}
+
 #card-label:hover {
     background-color: yellow;
   }
@@ -209,6 +227,11 @@ section > h2 {
     background-image: url("../images/horiseon.jpg");
     background-position: center;
   
+}
+
+.calculator {
+  background-image: url("../images/calculator.jpg");
+  background-position: center;
 }
 
 
