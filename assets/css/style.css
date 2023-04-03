@@ -101,12 +101,12 @@ a span:hover {
   background-size: cover;
   background-position: center;
   min-height: 15rem;
-  display: flex;
-  flex-wrap: wrap;
+/*   display: flex;
+  flex-wrap: wrap */;
   position: relative;
-  display: flex;
+/*   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
+  align-items: flex-end; */
 }
 
 .background-img h2 {
@@ -117,6 +117,10 @@ a span:hover {
   padding: 1rem 2rem;
   margin: 0 1rem 1rem 0;
   line-height: .8;
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+
 }
 
 main {
@@ -157,7 +161,7 @@ section > h2 {
   justify-content: space-around;
   align-items: center;
   flex-basis: 80%;
-  border: 5px solid red;
+  /* border: 5px solid red; */
 }
 
 .card {
@@ -170,7 +174,7 @@ section > h2 {
   min-width: 20rem;
   flex-basis: 47%;
   margin: 1rem;
-  border: 5px solid red;
+  border: 5px solid var(--blue);
 }
 
 .card:first-child {
@@ -179,17 +183,41 @@ section > h2 {
 }
 
 .card:hover {
-  background-color: red;
+  opacity: .5;
 }
 
 #card-label {
-  background-color: white;
+  background-color: var(--blue);
+  color: var(--white);
   margin:  0 0 1rem 1rem;
   font-size: 3rem;
   padding: .5rem 1rem;
   border-radius: 10px;
-  display: flex;
+  /* border-radius: 10px; */
+  /* display: flex; */
   }
+
+.cont {
+  background-color: var(--blue);
+  color: #fff;
+  margin: 0 0 1rem 1rem;
+  padding: .5rem 1rem;
+  border-radius: 10px;
+}
+
+  .cont p {
+  font-size: 1.5rem;
+  padding: .5rem 1rem;
+  margin: 0 0 1rem 1.5rem;
+  text-align: center;
+}
+
+
+
+h4 a {
+  text-decoration: none;
+  color: #fff;
+}
 
 /* #card-label span {
   font-size: 2rem;
@@ -214,7 +242,7 @@ address a {
 }
 
 #card-label:hover {
-    background-color: yellow;
+    background-color: var(--orange);
   }
 
 .css {
@@ -226,12 +254,72 @@ address a {
 .horiseon {
     background-image: url("../images/horiseon.jpg");
     background-position: center;
+    background-size: cover;
   
 }
 
 .calculator {
   background-image: url("../images/calculator.jpg");
   background-position: center;
+}
+ 
+@media only screen and (max-width: 768px) {
+  section > h2 {
+    flex-basis: 90%;
+    text-align: center;
+    border-bottom: 5px solid var(--blue);
+    border-right: none;
+  }
+
+  section {
+    justify-content: center;
+  }
+
+
+section div {
+  margin-top: 3rem;
+  justify-content: center;
+  min-width: 100%;
+}
+
+.card {
+  align-items: center;
+  flex-basis: 100%;
+}
+
+/* .card:first-child {
+  align-items: center;
+  flex-basis: 100%;
+} */
+
+.cont {
+  text-align: center;
+  background-position: center;
+  font-size: 1.6rem;
+  margin-right: 2rem;
+  
+}
+
+#card-label {
+  text-align: center;
+  font-size: 2rem;
+  }
+
+address {
+  display: flex;
+  flex-basis: 100%;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.about-me {
+  font-size: 2.5rem;
+}
+
+/* .background-img h2 {
+  position: absolute;
+  margin: 0 auto;
+} */
 }
 
 
