@@ -24,7 +24,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  background-color: var(--blue);
+  background-image: linear-gradient(to right, var(--blue), rgb(9, 9, 234));
   padding: 5rem 0 0 0;
   }
 
@@ -37,7 +37,8 @@ header h1 {
   justify-content: left;
   background-color: var(--orange);
   border: 1.5rem solid;
-  border-color: var(--blue);
+  border-color: var(--orange);
+  margin: 1rem;
   min-width: 40%;
   border-radius: 2rem;
   position: relative;
@@ -46,7 +47,7 @@ header h1 {
 
 h1 {
   position: relative;
-}
+  }
 
 span:hover {
   color: var(--white);
@@ -58,6 +59,7 @@ h1:hover:after {
   content: url("../Images/placeholdface.jpg");
   position: absolute;
   display: block;
+  max-block-size: 20rem 20rem;
   margin-top: 5rem;
   margin-left: 5rem;
   z-index: 1;
@@ -90,6 +92,8 @@ a span:hover {
   font-weight: 600;
   color: var(--white);
   transition: all .1s linear;
+  padding: 1.2rem;
+  border-radius: 10px;
 }
 
 .background-img {
@@ -121,45 +125,95 @@ main {
 
 section {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   align-items:  stretch;
-  justify-content: center;
   margin: 1rem 0;
 }
 
 section > h2 {
-  flex: 0 0 20%;
+  flex-basis: 20%;
   border-right: 5px solid var(--blue);
   text-align: right;
   font-size: 3rem;
   padding: 10px 20px;
 }
 
-.content {
-  flex: 0 0 80%;
+.about-me {
+  flex-basis: 80%;
   padding: 0 2rem 0 3rem;
   font-size: 1.6rem;
   line-height: 1.5;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  flex-direction: row;
+  border: 5x solid red;
 }
 
 .card-container {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  flex-basis: 80%;
+  border: 5px solid red;
 }
 
-#main-card {
+.card {
+  background-color: var(--blue);
   display: flex;
-  flex: 1 0 100%;
-  background-image: url("../Images/cssimage.jpg");
-  background-size: cover;
-  background-position: center;
-  min-height: 15rem;
-  flex-grow: 3;
+  flex-flow: column wrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+  min-height: 20rem;
+  min-width: 20rem;
+  flex-basis: 47%;
+  margin: 1rem;
+  border: 5px solid red;
+}
+
+.card:first-child {
+  min-height: 40rem;
+  flex-basis: 100%;
+}
+
+.card:hover {
+  background-color: red;
+}
+
+#card-label {
+  background-color: white;
+  margin:  0 0 1rem 1rem;
+  font-size: 3rem;
+  padding: .5rem 1rem;
+  border-radius: 10px;
+  display: flex;
+  }
+
+/* #card-label span {
+  font-size: 2rem;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+} */
+
+#card-label:hover {
+    background-color: yellow;
+  }
+
+.css {
+    background-image: url("../images/cssimage.jpg");
+    background-position: center;
+    background-size: 100%;
+}
+
+.horiseon {
+    background-image: url("../images/horiseon.jpg");
+    background-position: center;
   
 }
+
+
+
+
 
 
 
