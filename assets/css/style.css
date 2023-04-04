@@ -97,7 +97,7 @@ a span:hover {
 }
 
 .background-img {
-  background-image: url("../images/bluebackground.webp");
+  background-image: url("../Images/bluebackground.webp");
   background-size: cover;
   background-position: center;
   min-height: 15rem;
@@ -246,20 +246,20 @@ address a {
   }
 
 .css {
-    background-image: url("../images/cssimage.jpg");
+    background-image: url("../Images/cssimage.jpg");
     background-position: center;
     background-size: 100%;
 }
 
 .horiseon {
-    background-image: url("../images/horiseon.jpg");
+    background-image: url("../Images/horiseon.jpg");
     background-position: center;
     background-size: cover;
   
 }
 
 .calculator {
-  background-image: url("../images/calculator.jpg");
+  background-image: url("../Images/calculator.jpg");
   background-position: center;
 }
  
